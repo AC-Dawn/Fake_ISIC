@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>前端网站</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app">
+    <div class="container">
+      <div class="input-group">
+        <label for="nameInput">护照英文名：</label>
+        <input type="text" id="nameInput" placeholder="先名后姓【英文名】">
+      </div>
+      <div class="input-group">
+        <label for="dateInput">护照生日：</label>
+        <input type="date" id="dateInput">
+      </div>
+      <div class="input-group">
+        <label for="fileInput">证件照 ( 宽x高: 210x253 px )：</label>
+        <div class="link-group">
+        <a href="https://www.birme.net/?target_width=210&target_height=253" target="_blank">裁切照片</a>
+      </div>
+        <input type="file" id="fileInput">
+      </div>
+      <div class="button-group">
+        <button id="submitButton">生成</button>
+        <p>生成后，长按/右键 分别保存图片</p>
+      </div>
+    </div>
+    <div class="images">
+      <img id="frontImage" src="./src/sample_front.png">
+      <img id="backImage" src="./src/sample_back.png">
+    </div>
+  <div>
+  <script src="script.js"></script>
+</body>
+</html>
